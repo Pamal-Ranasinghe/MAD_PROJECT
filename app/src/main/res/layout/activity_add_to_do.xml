@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    tools:context=".AddCurrency">
+
+    <TextView
+        android:id="@+id/newToDoTitle"
+        android:layout_width="218dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/AddNewToDoTitle"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:fontFamily="@font/bowlby_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/enterTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:hint="@string/EnterTask"
+        android:inputType="textPersonName"
+        android:textColorLink="@android:color/black"
+        android:textCursorDrawable="@android:drawable/edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newToDoTitle" />
+
+    <EditText
+        android:id="@+id/enterDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:hint="@string/enterDescription"
+        android:inputType="textPersonName"
+        android:textCursorDrawable="@android:drawable/edit_text"
+        app:layout_constraintStart_toStartOf="@+id/enterTask"
+        app:layout_constraintTop_toBottomOf="@+id/enterTask" />
+
+    <EditText
+        android:id="@+id/enterAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:hint="@string/enterAmount"
+        android:inputType="numberDecimal"
+        android:textCursorDrawable="@android:drawable/edit_text"
+        app:layout_constraintStart_toStartOf="@+id/enterDescription"
+        app:layout_constraintTop_toBottomOf="@+id/enterDescription" />
+
+    <EditText
+        android:id="@+id/enterDate"
+        android:layout_width="210dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="@string/enterDate"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/enterAmount"
+        app:layout_constraintTop_toBottomOf="@+id/enterAmount" />
+
+    <Button
+        android:id="@+id/confirmAddToDo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/btnAddToDo"
+        android:textColor="@android:color/holo_orange_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

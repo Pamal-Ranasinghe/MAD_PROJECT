@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">EasyApp</string>
+    <string name="countToDo">Remaining Tasks</string>
+    <string name="btnAddToDo">Add Task</string>
+    <string name="AddNewToDoTitle">Add New Task</string>
+    <string name="EnterTask">Task</string>
+    <string name="enterDescription">Description</string>
+    <string name="enterAmount">Amount</string>
+    <string name="updateTitle">Update Task</string>
+    <string name="UpdateButtoon">Update</string>
+    <string name="button_currency">currency</string>
+    <string name="button_daily">Daily</string>
+    <string name="button_weekly">Weekly</string>
+    <string name="button_monthly">Monthly</string>
+    <string name="enterDate">Date</string>
+    <string name="AddType">Add Plan</string>
+    <string name="TypeTitle">Plan Title</string>
+    <string name="EnterTotalAmount">Total Amount</string>
+    <string name="DeletePlan">delete plan</string>
+    <string name="RemainingAmount">Remaining Amount</string>
+
+</resources>
